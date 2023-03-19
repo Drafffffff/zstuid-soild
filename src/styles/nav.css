@@ -1,0 +1,10 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navBar .navItem {
+  /* flex: 1; */
+  /* max-width: 1000px; */
+}

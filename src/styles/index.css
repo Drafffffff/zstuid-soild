@@ -1,0 +1,112 @@
+.graContainer {
+  @apply w-full p-16 overflow-hidden;
+  overflow: hidden;
+}
+.floatTitle img {
+  @apply absolute;
+
+  /* position: fixed; */
+  width: calc(100% - 8rem);
+  top: 14rem;
+  left: 3rem;
+}
+.floatTitleL img {
+  @apply absolute;
+  /* position: fixed; */
+  width: 70%;
+  top: 14rem;
+  left: 3rem;
+  transform: translateX(var(--x)) translateY(var(--y));
+}
+
+.floatTitle img:first-child {
+  z-index: 1;
+}
+
+.floatTitle img:last-child {
+  z-index: 3;
+}
+.floatTitleL img:first-child {
+  z-index: 1;
+}
+
+.floatTitleL img:last-child {
+  z-index: 3;
+}
+
+.scrollContent {
+  position: relative;
+  @apply w-full pt-36;
+  z-index: 2;
+}
+.scrollContent .img1 {
+  @apply w-full flex justify-end;
+  transform: translateX(4rem);
+  margin-bottom: 30px;
+}
+.scrollContent .introTitle {
+  margin-left: 5.4rem;
+  margin-bottom: 10px;
+}
+.scrollContent .introContent {
+  margin-left: 5.4rem;
+  margin-bottom: 40px;
+}
+.scrollContent .img1 img {
+  width: 340px;
+  aspect-ratio: 2.15;
+  object-fit: cover;
+}
+.scrollContent .img2 img {
+  width: 340px;
+  aspect-ratio: 2.15;
+  object-fit: cover;
+}
+@media (min-width: 440px) {
+  .scrollContent .img1 {
+    margin-top: 13vw;
+    margin-bottom: 5vh;
+  }
+  .scrollContent .img1 img {
+    width: 80%;
+    /* height: 192px; */
+    object-fit: cover;
+    transform: translateX(var(--x)) translateY(var(--y));
+  }
+  .scrollContent .img2 img {
+    width: 80%;
+    object-fit: cover;
+  }
+  .scrollContent .introTitle {
+    margin-left: calc(50% - 4rem);
+    margin-bottom: 10px;
+  }
+  .scrollContent .introContent {
+    margin-left: calc(50% - 4rem);
+    margin-bottom: calc(50px + 10vw);
+  }
+}
+.scrollContent .img2 {
+  @apply w-full flex justify-start;
+  transform: translateX(-4rem);
+  margin-bottom: 30px;
+}
+@media (min-width: 440px) {
+  .newsContainer {
+    display: flex;
+  }
+  .newsContainer .newsLeft {
+    flex: 2;
+  }
+  .newsContainer .newsRight {
+    width: 300px;
+    flex: 1;
+    height: 100%;
+    margin-left: 1rem;
+    background-color: #f5f5f5;
+  }
+}
+
+.test {
+  height: 1000px;
+}
