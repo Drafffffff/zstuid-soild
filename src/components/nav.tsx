@@ -19,7 +19,7 @@ export default function Nav() {
             <img src="logo.svg" class="h-18 sm:h-20" />
           </A>
         </li>
-        <li class="flex-1 max-w-7xl ">
+        <li class="flex-1 max-w-[1200px] ">
           <ul class="container hidden items-center t3 justify-between md:flex">
             <li class={` ${active("/")} `}>
               <A href="/">学院介绍</A>

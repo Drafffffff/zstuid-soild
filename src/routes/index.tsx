@@ -5,7 +5,13 @@ import "../styles/index.css";
 import { onMount, createSignal, createEffect } from "solid-js";
 import { map } from "~/utils/util";
 
-import { Title1, NewsCardIndex } from "~/components/compIndex";
+import {
+  Title1,
+  NewsCardIndex,
+  NewsCardMore,
+  DropDown,
+  IndexCard,
+} from "~/components/compIndex";
 // gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const [pos, setPos] = createSignal({ x: 0, y: 0 });
@@ -16,17 +22,6 @@ export default function Home() {
       y: event.clientY,
     });
   }
-  createEffect(() => {
-    console.log(pos());
-  });
-  onMount(() => {
-    // let st = ScrollTrigger.create({
-    //   trigger: ".floatTitle",
-    //   start: "top center",
-    //   pin: ".floatTitle",
-    //   markers: true,
-    // });
-  });
   return (
     <main class="mx-auto text-white " onMouseMove={handleMouseMove}>
       <div class="graContainer  gradient-main">
@@ -64,21 +59,80 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div class="newsCon con h-[500px] ">
+      <div class="newsCon con  ">
         <Title1 />
-        <div class="newsContainer">
+        <div class="newsContainer mt-[3rem]">
           <div class="newsLeft">
             <hr />
             <NewsCardIndex />
-
             <hr />
             <NewsCardIndex />
             <hr />
             <NewsCardIndex />
             <hr />
           </div>
-          <div class="newsRight">
-            <NewsCardIndex />
+          <div class="hidden newsRight">
+            <div class="title mb-[2rem]">
+              <span class="gradient-text t4">更多资讯</span>
+            </div>
+            <div>
+              <div class="moreInfo">
+                <hr />
+                <NewsCardMore />
+                <hr />
+                <NewsCardMore />
+                <hr />
+                <NewsCardMore />
+                <hr />
+                <NewsCardMore />
+                <hr />
+              </div>
+            </div>
+            <div class="more mt-[4rem]">
+              <span class="cursor-pointer gradient-text t2 underline decoration-[#55bdde] underline-offset-2">
+                查看更多
+              </span>
+            </div>
+          </div>
+
+          <div class="more mt-[2rem] text-right sm:hidden">
+            <span class="cursor-pointer gradient-text t2 underline decoration-[#55bdde] underline-offset-2">
+              查看更多
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="talent con ">
+        <Title1 zh={"人才培养"} en={"TALENT"} />
+        <div class="talentContent">
+          <div class="left">
+            <div class="desc text-black t1">
+              用人单位多数通过实习实训等方式提前锁定毕业生到企业就业，普遍评价学生基础扎实、业务过硬。2019年浙江省教育评估院调查数据显示，毕业生在实践动手能力、创新能力、团队协作能力、人际沟通能力和专业水平等各方面的企业评价得分均为93.33，领先于全省平均水平。
+            </div>
+            <div class="dp">
+              <DropDown active={true} />
+              <DropDown active={true} />
+              <DropDown active={true} />
+            </div>
+          </div>
+          <div class="right">
+            <img src="tmp/3.png" />
+          </div>
+        </div>
+      </div>
+      <div class="honors con">
+        <Title1 zh={"荣誉成果"} en={"Honors  &  achievements"} />
+        <div class="cards">
+          <div class="row1 row">
+            <IndexCard />
+            <IndexCard />
+            <IndexCard />
+          </div>
+          <div class="row2 row">
+            <IndexCard />
+            <IndexCard />
+            <IndexCard />
           </div>
         </div>
       </div>

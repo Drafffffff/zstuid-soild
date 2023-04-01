@@ -13,6 +13,7 @@ import {
 } from "solid-start";
 import "./root.css";
 import Nav from "./components/nav";
+import Footer from "./components/footer";
 
 export default function Root() {
   return (
@@ -29,6 +30,7 @@ export default function Root() {
             <Routes>
               <FileRoutes />
             </Routes>
+            <Footer/>
           </ErrorBoundary>
         </Suspense>
         <Scripts />

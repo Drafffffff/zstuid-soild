@@ -3,6 +3,14 @@
 @tailwind utilities;
 html {
   /* overflow: hidden; */
+  --highlight-color: #55bdde;
+  --gray-color: #868686;
+  --text-color: #000;
+  --m-width: 600px;
+  --highlight-color-2: #0280db;
+  --footer-color: #3ab9b9;
+  --gradient-from: #0683dc;
+  --gradient-to: #7ddadf;
 }
 :root {
   font-size: 9px;
@@ -27,7 +35,7 @@ html {
 
 .t5 {
   font-size: 2.6rem;
-  font-size: clamp(2.6rem, 2rem + 0.4vw, 3.6rem);
+  font-size: clamp(2rem, 1.8rem + 0.4vw, 3rem);
 }
 
 .t6 {
@@ -101,6 +109,10 @@ html {
 .gradient-main {
   @apply bg-gradient-to-br from-[#0683DC] to-[#7DDADF];
 }
+
+.gradient-line {
+  @apply bg-gradient-to-r from-[#0683DC] to-[#7DDADF];
+}
 .gradient-text {
   @apply inline-block;
   background: linear-gradient(to right, #0683dc, #7ddadf);
@@ -109,26 +121,26 @@ html {
 }
 .con {
   width: 100%;
-  @apply px-[2rem];
+  @apply px-[2rem] py-[4rem];
 }
 @media (min-width: 640px) {
   .con {
-    @apply px-[4rem];
+    @apply px-[4rem] py-[5rem];
   }
 }
 @media (min-width: 768px) {
   .con {
-    @apply px-[5rem];
+    @apply px-[5rem] py-[6rem];
   }
 }
 @media (min-width: 1024px) {
   .con {
-    @apply px-[10rem];
+    @apply px-[10rem] py-[7rem];
   }
 }
 @media (min-width: 1280px) {
   .con {
-    @apply px-[12rem];
+    @apply px-[12rem] py-[8rem];
   }
 }
 .ul {

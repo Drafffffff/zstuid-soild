@@ -1,0 +1,76 @@
+.footer {
+  background-color: black;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 10rem; */
+}
+.footer .mb .logo {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.footer .mb .links .title {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  color: var(--footer-color);
+}
+.footer .contact .tel {
+  color: var(--gray-color);
+}
+.footer .contact .email {
+  color: var(--gray-color);
+}
+.footer .links .link {
+  color: white;
+  text-decoration: underline;
+  font-weight: 200;
+}
+.footer .info {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #999;
+  color: var(--gray-color);
+  display: flex;
+  margin-bottom: 2rem;
+}
+.footer .copyright {
+  flex: 1;
+}
+@media (min-width: 440px) {
+  .footer .desktop {
+    display: flex;
+    color: white;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .footer .desktop .logo {
+    margin-top: 2rem;
+    flex: 2;
+  }
+  .footer .desktop .links {
+    margin-top: 2rem;
+    flex: 1;
+    border-left: 1px solid var(--gray-color);
+    padding-left: 4rem;
+    padding-top: 2rem;
+  }
+  
+  .footer .desktop .contact {
+    margin-top: 2rem;
+    flex: 1;
+    padding-top: 2rem;
+  }
+  .footer .desktop .copyright {
+    margin-top: 2rem;
+    text-align: right;
+    flex: 1.5;
+    padding-top: 2rem;
+  }
+  .footer .desktop .title {
+    color: var(--footer-color);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+}

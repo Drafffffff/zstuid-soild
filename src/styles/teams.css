@@ -1,0 +1,37 @@
+.teamOverview {
+  margin-top: 4rem;
+}
+.teamOverview .heading {
+  margin-bottom: 4rem;
+}
+
+.teamOverview .heading .title2 {
+  margin-bottom: 2rem;
+}
+@media (min-width: 440px) {
+  .teamOverview {
+    margin-top: 8rem;
+  }
+  .teamOverview .heading {
+    display: flex;
+  }
+  .teamOverview .heading .title2 {
+    flex: 1;
+  }
+  .teamOverview .heading .text {
+    flex: 2;
+  }
+  .teamOverview .imgs img {
+    height: 30vw;
+    object-fit: cover;
+    width: 100%;
+  }
+  .teamOverview .heading {
+    margin-bottom: 6rem;
+  }
+  .reachingCenter .researchItems{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vw;
+  }
+}
