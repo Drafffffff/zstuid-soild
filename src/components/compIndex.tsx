@@ -106,7 +106,7 @@ export function IndexCard() {
     trackScroll: throttleUpdate,
   });
   return (
-    <div class="IndexCard ulHover">
+    <div class="IndexCard ulHover hoverCard">
       <a href="/">
         <div
           class="cover gradient-main"
@@ -203,7 +203,7 @@ export function ResearchItem({
     console.log(bounds.width, bounds.height);
   });
   return (
-    <div class="ResearchItemCard">
+    <div class="ResearchItemCard hoverCard">
       <div
         class="cover "
         style={{ "--w": `${bounds.width}px`, "--h": `${bounds.height}px` }}
@@ -313,12 +313,156 @@ export function ResultcardSM({ cover, title, time, info }: ResultItemProps) {
         <img src={cover ?? defaultCover} ref={(e) => (img = e)} />{" "}
       </div>
       <div class="text ml-10">
-        <div
-          class="title t3 "
-        >
-          {title ?? defaultTitle}
-        </div>
+        <div class="title t3 ">{title ?? defaultTitle}</div>
         <div class="time t2 font-thin mt-[2rem]">{time ?? defaultTime}</div>
+      </div>
+    </div>
+  );
+}
+export function CourseResultCard() {
+  let img: HTMLImageElement | undefined;
+  const throttleUpdate: UpdateGuard = (fn) => throttle(fn, 500);
+  const bounds = createElementBounds(() => img, {
+    trackMutation: throttleUpdate,
+    trackScroll: throttleUpdate,
+  });
+  createEffect(() => {
+    console.log(bounds.width, bounds.height);
+  });
+  return (
+    <div>
+      <div class="CourseResultCard hoverCard cursor-pointer ulHover mt-10  ">
+        <div
+          class="cover"
+          style={{ "--w": `${bounds.width}px`, "--h": `${bounds.height}px` }}
+        >
+          <img src="/tmp/3.png" ref={(e) => (img = e)} />
+        </div>
+        <div class="title mt-[2rem]">
+          <div class="text">
+            <div
+              class="mainTitle t5 font-bold "
+              style={"--underlinecolor:var(--highlight-color-2)"}
+            >
+              <span class="sm:ul">原型控制与交互</span>
+            </div>
+            <div class="titleEn t2 text-gray-400 font-thin">
+              Prototype control and interaction
+            </div>
+          </div>
+          <img src="/arrow.svg" class="w-4 hidden sm:block" />
+        </div>
+      </div>
+    </div>
+  );
+}
+export function CourseWorksCard() {
+  let img: HTMLImageElement | undefined;
+  const throttleUpdate: UpdateGuard = (fn) => throttle(fn, 500);
+  const bounds = createElementBounds(() => img, {
+    trackMutation: throttleUpdate,
+    trackScroll: throttleUpdate,
+  });
+  return (
+    <div class="courseWorksCard select-none cursor-pointer hoverCard">
+      <div
+        class="cover"
+        style={{ "--w": `${bounds.width}px`, "--h": `${bounds.height}px` }}
+      >
+        <img
+          src="/tmp/2.png"
+          ref={(e) => {
+            img = e;
+          }}
+        />
+      </div>
+      <div class="title mt-[2rem]">
+        <div class="text">
+          <div class="author t2 font-bold gradient-text ">张三</div>
+          <div
+            class="mainTitle t5 my-[0.8rem] font-medium "
+            style="--underlinecolor:var(--highlight-color-2)"
+          >
+            <span class="sm:ul ]">原型控制与交互</span>
+          </div>
+          <div class="description t1  text-gray-400 font-thin">
+            Prototype control and interaction
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+export function NewsCard() {
+  return (
+    <div class="cursor-pointer NewsCard pt-[3rem]">
+      <div class="bg gradient-line -translate-y-[3rem] hidden sm:block"></div>
+      <div class="newsItem">
+        <div class="left">
+          <div class="cover">
+            <img src="/tmp/1.png" />
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="time">
+            <div class="text t2 font-thin">2023年7月20日</div>
+          </div>
+          <div class="title">
+            <div class="text t5">
+              工业设计系学子在2022年浙江省大学生工业设计大赛中喜获佳绩
+            </div>
+          </div>
+          <div class="info">
+            <div class="text t1 font-thin mt-[2rem]">
+              教学围绕“智能产品”、“硬件交互”、“服务创新”展开，致力于实现工业设计的文化赋能、科技赋能、产业赋能、商业赋能以及社会赋能。
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-[3rem]" />
+    </div>
+  );
+}
+export function GraWorkCard() {
+  let img: HTMLImageElement | undefined;
+  const throttleUpdate: UpdateGuard = (fn) => throttle(fn, 500);
+  const bounds = createElementBounds(() => img, {
+    trackMutation: throttleUpdate,
+    trackScroll: throttleUpdate,
+  });
+  return (
+    <div class="courseWorksCard select-none cursor-pointer hoverCard mb-[3rem] ">
+      <div
+        class="cover"
+        style={{ "--w": `${bounds.width}px`, "--h": `${bounds.height}px` }}
+      >
+        <img
+          src="/tmp/2.png"
+          ref={(e) => {
+            img = e;
+          }}
+        />
+      </div>
+      <div class="title mt-[2rem]">
+        <div class="text">
+          <div class="author t2 font-bold gradient-text ">张三</div>
+          <div
+            class="mainTitle t5 my-[0.8rem] font-medium "
+            style="--underlinecolor:var(--highlight-color-2)"
+          >
+            <span class="sm:ul ]">原型控制与交互</span>
+          </div>
+          <div class="description t1 hidden sm:block text-gray-400 font-thin">
+            Prototype control and interaction
+          </div>
+          <div
+            class="gradient-text t2 mt-[0.5rem] ulHover"
+            style={"--underlinecolor:var(--gradient-to)"}
+          >
+            <span class="ul">在线上展中观看&gt </span>
+          </div>
+        </div>
       </div>
     </div>
   );

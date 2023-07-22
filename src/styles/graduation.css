@@ -1,0 +1,153 @@
+.exbWorks .pagination ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: auto;
+}
+.onlineExb .entry {
+  margin-top: 10rem;
+  display: flex;
+  height: 300px;
+  gap: 1vw;
+}
+
+.onlineExb .entry .item {
+  user-select: none;
+  cursor: pointer;
+}
+.onlineExb .entry .one {
+  flex: 2;
+  background-image: url(/tmp/11.png);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.onlineExb .entry .two {
+  @apply hidden;
+}
+.onlineExb .entry .three {
+  @apply hidden;
+}
+.onlineExb .entry .one .entryLink {
+  background-color: rgba(2, 128, 219, 0.8);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+.onlineExb .entry .one .entryLink .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 180px;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+.onlineExb .entry .one:hover .entryLink {
+  width: 100%;
+}
+
+.teamOverview .years span {
+  @apply mr-[3rem] select-none cursor-pointer;
+}
+
+.teamOverview .years span.active {
+  @apply underline relative text-[#0280db] font-normal underline-offset-1;
+}
+@media (min-width: 440px) {
+  .teamOverview {
+    margin-top: 8rem;
+  }
+  .teamOverview .heading {
+    display: flex;
+  }
+  .teamOverview .heading .title2 {
+    flex: 1;
+  }
+  .teamOverview .heading .text {
+    flex: 2;
+  }
+  .teamOverview .imgs img {
+    height: 30vw;
+    object-fit: cover;
+    width: 100%;
+  }
+  .teamOverview .heading {
+    margin-bottom: 6rem;
+  }
+
+  .teamOverview.con {
+    margin-top: 0;
+  }
+
+  .teamOverview .years span {
+    @apply mr-[10rem] select-none cursor-pointer;
+  }
+
+  .teamOverview .years span.active {
+    @apply underline relative text-[#0280db] font-normal underline-offset-1;
+  }
+
+  .onlineExb .entry {
+    margin-top: 10rem;
+    display: flex;
+    height: 20vw;
+    gap: 1vw;
+  }
+
+  .onlineExb .entry .item {
+    user-select: none;
+    cursor: pointer;
+  }
+  .onlineExb .entry .one {
+    flex: 2;
+    background-image: url(/tmp/11.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .onlineExb .entry .two {
+    flex: 1;
+    background-image: url(/tmp/22.png);
+    background-size: cover;
+  }
+  .onlineExb .entry .three {
+    flex: 1;
+    background-image: url(/tmp/33.png);
+    background-size: cover;
+  }
+  .onlineExb .entry .one .entryLink {
+    background-color: rgba(2, 128, 219, 0.8);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+  }
+  .onlineExb .entry .one .entryLink .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    padding: 0 3rem;
+  }
+
+  .onlineExb .entry .one:hover .entryLink {
+    width: 100%;
+  }
+  .exbWorks .works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vw;
+  }
+
+  .exbWorks .pagination ul {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    margin: auto;
+  }
+}

@@ -117,6 +117,7 @@ export default function Nav() {
             <li>
               <img src="/search.svg" class="w-10 cursor-pointer" />
             </li>
+
           </ul>
         </li>
         <li
@@ -140,8 +141,8 @@ export default function Nav() {
             <li class={` ${activeDrop("/")} px-16 py-10`}>
               <A href="/">学院介绍</A>
             </li>
-            <li class={` ${activeDrop("/team")} px-16 py-10 `}>
-              <A href="/team">团队建设</A>
+            <li class={` ${activeDrop("/teams")} px-16 py-10 `}>
+              <A href="/teams">团队建设</A>
             </li>
             <li class={` ${activeDrop("/course")} px-16 py-10`}>
               <A href="/course">教学课程</A>
