@@ -1,0 +1,206 @@
+{
+  "_compIndex-8f886887.js": {
+    "css": [
+      "assets/compIndex-3ea418e6.css"
+    ],
+    "file": "assets/compIndex-8f886887.js",
+    "imports": [
+      "src/entry-client.tsx"
+    ]
+  },
+  "_index-0718f026.js": {
+    "file": "assets/index-0718f026.js",
+    "imports": [
+      "src/entry-client.tsx"
+    ]
+  },
+  "compIndex.css": {
+    "file": "assets/compIndex-3ea418e6.css",
+    "src": "compIndex.css"
+  },
+  "course.css": {
+    "file": "assets/course-f5fe807d.css",
+    "src": "course.css"
+  },
+  "src/entry-client.css": {
+    "file": "assets/entry-client-c27d151d.css",
+    "src": "src/entry-client.css"
+  },
+  "src/entry-client.tsx": {
+    "css": [
+      "assets/entry-client-c27d151d.css"
+    ],
+    "dynamicImports": [
+      "src/routes/[...404].tsx",
+      "src/routes/about.tsx",
+      "src/routes/index.tsx",
+      "src/routes/search.tsx",
+      "src/routes/course/(course).tsx",
+      "src/routes/course/[id].tsx",
+      "src/routes/graduation/(graduation).tsx",
+      "src/routes/graduation/[id].tsx",
+      "src/routes/news/(news).tsx",
+      "src/routes/news/[id].tsx",
+      "src/routes/teams/(teams).tsx",
+      "src/routes/teams/[id].tsx"
+    ],
+    "file": "assets/entry-client-c1430928.js",
+    "isEntry": true,
+    "src": "src/entry-client.tsx"
+  },
+  "src/routes/[...404].tsx": {
+    "file": "assets/_...404_-d11d7d45.js",
+    "imports": [
+      "src/entry-client.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/[...404].tsx"
+  },
+  "src/routes/about.tsx": {
+    "file": "assets/about-2a322fb0.js",
+    "imports": [
+      "src/entry-client.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/about.tsx"
+  },
+  "src/routes/course/(course).tsx": {
+    "css": [
+      "assets/course-f5fe807d.css"
+    ],
+    "file": "assets/(course)-25528eac.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/course/(course).tsx"
+  },
+  "src/routes/course/[id].tsx": {
+    "css": [
+      "assets/course-f5fe807d.css"
+    ],
+    "file": "assets/_id_-2ce3642f.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_index-0718f026.js",
+      "_compIndex-8f886887.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/course/[id].tsx"
+  },
+  "src/routes/graduation/(graduation).css": {
+    "file": "assets/(graduation)-e1ce6cb2.css",
+    "src": "src/routes/graduation/(graduation).css"
+  },
+  "src/routes/graduation/(graduation).tsx": {
+    "css": [
+      "assets/(graduation)-e1ce6cb2.css"
+    ],
+    "file": "assets/(graduation)-0ae6c5cb.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js",
+      "_index-0718f026.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/graduation/(graduation).tsx"
+  },
+  "src/routes/graduation/[id].tsx": {
+    "css": [
+      "assets/teams-736641ab.css"
+    ],
+    "file": "assets/_id_-549b4d7b.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/graduation/[id].tsx"
+  },
+  "src/routes/index.css": {
+    "file": "assets/index-1edda93e.css",
+    "src": "src/routes/index.css"
+  },
+  "src/routes/index.tsx": {
+    "css": [
+      "assets/index-1edda93e.css"
+    ],
+    "file": "assets/index-e427b63d.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/index.tsx"
+  },
+  "src/routes/news/(news).css": {
+    "file": "assets/(news)-43bdf156.css",
+    "src": "src/routes/news/(news).css"
+  },
+  "src/routes/news/(news).tsx": {
+    "css": [
+      "assets/(news)-43bdf156.css"
+    ],
+    "file": "assets/(news)-8b60b75b.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js",
+      "_index-0718f026.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/news/(news).tsx"
+  },
+  "src/routes/news/[id].tsx": {
+    "css": [
+      "assets/teams-736641ab.css"
+    ],
+    "file": "assets/_id_-3a839fa8.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/news/[id].tsx"
+  },
+  "src/routes/search.tsx": {
+    "css": [
+      "assets/teams-736641ab.css"
+    ],
+    "file": "assets/search-d23464ed.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/search.tsx"
+  },
+  "src/routes/teams/(teams).tsx": {
+    "css": [
+      "assets/teams-736641ab.css"
+    ],
+    "file": "assets/(teams)-6f429000.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/teams/(teams).tsx"
+  },
+  "src/routes/teams/[id].tsx": {
+    "css": [
+      "assets/teams-736641ab.css"
+    ],
+    "file": "assets/_id_-7c2f332f.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_compIndex-8f886887.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/teams/[id].tsx"
+  },
+  "teams.css": {
+    "file": "assets/teams-736641ab.css",
+    "src": "teams.css"
+  }
+}

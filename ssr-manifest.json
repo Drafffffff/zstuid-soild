@@ -1,0 +1,151 @@
+{
+  "\u0000vite/preload-helper": [
+  ],
+  "node_modules/.pnpm/@solid-primitives+bounds@0.0.109_solid-js@1.6.15/node_modules/@solid-primitives/bounds/dist/index.js": [
+    "/zstuid-soild/assets/compIndex-8f886887.js",
+    "/zstuid-soild/assets/compIndex-3ea418e6.css"
+  ],
+  "node_modules/.pnpm/@solid-primitives+event-listener@2.2.8_solid-js@1.6.15/node_modules/@solid-primitives/event-listener/dist/index.js": [
+    "/zstuid-soild/assets/compIndex-8f886887.js",
+    "/zstuid-soild/assets/compIndex-3ea418e6.css"
+  ],
+  "node_modules/.pnpm/@solid-primitives+pagination@0.2.7_solid-js@1.6.15/node_modules/@solid-primitives/pagination/dist/index.js": [
+    "/zstuid-soild/assets/index-0718f026.js"
+  ],
+  "node_modules/.pnpm/@solid-primitives+resize-observer@2.0.12_solid-js@1.6.15/node_modules/@solid-primitives/resize-observer/dist/index.js": [
+    "/zstuid-soild/assets/compIndex-8f886887.js",
+    "/zstuid-soild/assets/compIndex-3ea418e6.css"
+  ],
+  "node_modules/.pnpm/@solid-primitives+scheduled@1.3.1_solid-js@1.6.15/node_modules/@solid-primitives/scheduled/dist/index.js": [
+    "/zstuid-soild/assets/compIndex-8f886887.js",
+    "/zstuid-soild/assets/compIndex-3ea418e6.css"
+  ],
+  "node_modules/.pnpm/@solid-primitives+utils@5.5.0_solid-js@1.6.15/node_modules/@solid-primitives/utils/dist/index.js": [
+    "/zstuid-soild/assets/compIndex-8f886887.js",
+    "/zstuid-soild/assets/compIndex-3ea418e6.css"
+  ],
+  "node_modules/.pnpm/@solid-primitives+utils@6.2.0_solid-js@1.6.15/node_modules/@solid-primitives/utils/dist/chunk/APG4HSEJ.js": [
+    "/zstuid-soild/assets/index-0718f026.js"
+  ],
+  "node_modules/.pnpm/@solidjs+meta@0.28.2_solid-js@1.6.15/node_modules/@solidjs/meta/dist/index.jsx": [
+  ],
+  "node_modules/.pnpm/@solidjs+router@0.7.1_solid-js@1.6.15/node_modules/@solidjs/router/dist/components.jsx": [
+  ],
+  "node_modules/.pnpm/@solidjs+router@0.7.1_solid-js@1.6.15/node_modules/@solidjs/router/dist/integration.js": [
+  ],
+  "node_modules/.pnpm/@solidjs+router@0.7.1_solid-js@1.6.15/node_modules/@solidjs/router/dist/lifecycle.js": [
+  ],
+  "node_modules/.pnpm/@solidjs+router@0.7.1_solid-js@1.6.15/node_modules/@solidjs/router/dist/routing.js": [
+  ],
+  "node_modules/.pnpm/@solidjs+router@0.7.1_solid-js@1.6.15/node_modules/@solidjs/router/dist/utils.js": [
+  ],
+  "node_modules/.pnpm/solid-js@1.6.15/node_modules/solid-js/dist/solid.js": [
+  ],
+  "node_modules/.pnpm/solid-js@1.6.15/node_modules/solid-js/web/dist/web.js": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/entry-client/StartClient.tsx": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/entry-client/mount.tsx": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/error-boundary/ErrorBoundary.tsx": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/root/Document.tsx": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/root/FileRoutes.tsx": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/root/Scripts.tsx": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/router.tsx": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/server/ServerContext.tsx": [
+  ],
+  "node_modules/.pnpm/solid-start@0.2.23_@solidjs+meta@0.28.2_@solidjs+router@0.7.1_solid-js@1.6.15_solid-start-nod_airljeb7glvu4sdjeyj6obq5na/node_modules/solid-start/server/types.tsx": [
+  ],
+  "src/components/Counter.tsx": [
+    "/zstuid-soild/assets/about-2a322fb0.js"
+  ],
+  "src/components/compIndex.tsx": [
+    "/zstuid-soild/assets/compIndex-8f886887.js",
+    "/zstuid-soild/assets/compIndex-3ea418e6.css"
+  ],
+  "src/components/footer.tsx": [
+  ],
+  "src/components/nav.tsx": [
+  ],
+  "src/entry-client.tsx": [
+  ],
+  "src/root.css": [
+  ],
+  "src/root.tsx": [
+  ],
+  "src/routes/[...404].tsx": [
+    "/zstuid-soild/assets/_...404_-d11d7d45.js"
+  ],
+  "src/routes/about.tsx": [
+    "/zstuid-soild/assets/about-2a322fb0.js"
+  ],
+  "src/routes/course/(course).tsx": [
+    "/zstuid-soild/assets/(course)-25528eac.js",
+    "/zstuid-soild/assets/course-f5fe807d.css"
+  ],
+  "src/routes/course/[id].tsx": [
+    "/zstuid-soild/assets/_id_-2ce3642f.js",
+    "/zstuid-soild/assets/course-f5fe807d.css"
+  ],
+  "src/routes/graduation/(graduation).tsx": [
+    "/zstuid-soild/assets/(graduation)-0ae6c5cb.js",
+    "/zstuid-soild/assets/(graduation)-e1ce6cb2.css"
+  ],
+  "src/routes/graduation/[id].tsx": [
+    "/zstuid-soild/assets/_id_-549b4d7b.js",
+    "/zstuid-soild/assets/teams-736641ab.css"
+  ],
+  "src/routes/index.tsx": [
+    "/zstuid-soild/assets/index-e427b63d.js",
+    "/zstuid-soild/assets/index-1edda93e.css"
+  ],
+  "src/routes/news/(news).tsx": [
+    "/zstuid-soild/assets/(news)-8b60b75b.js",
+    "/zstuid-soild/assets/(news)-43bdf156.css"
+  ],
+  "src/routes/news/[id].tsx": [
+    "/zstuid-soild/assets/_id_-3a839fa8.js",
+    "/zstuid-soild/assets/teams-736641ab.css"
+  ],
+  "src/routes/search.tsx": [
+    "/zstuid-soild/assets/search-d23464ed.js",
+    "/zstuid-soild/assets/teams-736641ab.css"
+  ],
+  "src/routes/teams/(teams).tsx": [
+    "/zstuid-soild/assets/(teams)-6f429000.js",
+    "/zstuid-soild/assets/teams-736641ab.css"
+  ],
+  "src/routes/teams/[id].tsx": [
+    "/zstuid-soild/assets/_id_-7c2f332f.js",
+    "/zstuid-soild/assets/teams-736641ab.css"
+  ],
+  "src/styles/compIndex.css": [
+    "/zstuid-soild/assets/compIndex-8f886887.js",
+    "/zstuid-soild/assets/compIndex-3ea418e6.css"
+  ],
+  "src/styles/footer.css": [
+  ],
+  "src/styles/graduation.css": [
+    "/zstuid-soild/assets/(graduation)-0ae6c5cb.js",
+    "/zstuid-soild/assets/(graduation)-e1ce6cb2.css"
+  ],
+  "src/styles/index.css": [
+    "/zstuid-soild/assets/index-e427b63d.js",
+    "/zstuid-soild/assets/index-1edda93e.css"
+  ],
+  "src/styles/nav.css": [
+  ],
+  "src/styles/news.css": [
+    "/zstuid-soild/assets/(news)-8b60b75b.js",
+    "/zstuid-soild/assets/(news)-43bdf156.css"
+  ],
+  "src/utils/util.ts": [
+    "/zstuid-soild/assets/index-e427b63d.js",
+    "/zstuid-soild/assets/index-1edda93e.css"
+  ]
+}
