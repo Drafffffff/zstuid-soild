@@ -11,6 +11,7 @@ html {
   --footer-color: #3ab9b9;
   --gradient-from: #0683dc;
   --gradient-to: #7ddadf;
+  --nav-highlight: #0080db;
 }
 :root {
   font-size: 9px;
@@ -116,6 +117,7 @@ html {
 .gradient-text {
   @apply inline-block;
   background: linear-gradient(to right, #0683dc, #7ddadf);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

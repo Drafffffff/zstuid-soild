@@ -43,7 +43,7 @@ export function NewsCardIndex() {
   return (
     <div class="NewsCardIndex ulHover">
       <div class="newImg">
-        <img src="tmp/2.png" />
+        <img src="/tmp/2.png" />
       </div>
 
       <div class="newsInfo">
@@ -87,7 +87,7 @@ export function DropDown(props: DropDownProps) {
         }}
       >
         <span class={`icon mr-5 ${toggle() ? "active" : ""}`}>
-          <img src="tri.svg" class="h-3 sm:h-5" />
+          <img src="/tri.svg" class="h-3 sm:h-5" />
         </span>
         <span class={`text t3 ${toggle() ? "active" : ""}`}>就业质量高</span>
       </div>
@@ -112,7 +112,7 @@ export function IndexCard() {
           class="cover gradient-main"
           style={{ "--w": `${bounds.width}px`, "--h": `${bounds.height}px` }}
         >
-          <img src="tmp/4.png" ref={(e) => (img = e)} />
+          <img src="/tmp/4.png" ref={(e) => (img = e)} />
         </div>
         <div class="tag t3 gradient-text">
           <span>{"# " + "工业设计系"}</span>
@@ -187,8 +187,12 @@ export function ResearchItem({
   titleEn,
   info,
 }: ResearchItemProps) {
-const defaultCover = "tmp/1.png";
-  const defaultTitle = "工业设计系学子在2022年浙江省大学生工业设计大赛中喜获佳绩";
+  const defaultCover = "/tmp/1.png";
+  const defaultTitle =
+    "工业设计系学子在2022年浙江省大学生工业设计大赛中喜获佳绩";
+  const defaultTitleEn = "Intelligent Manufacturing And System";
+  const defaultInfo =
+    "教学围绕“智能产品”、“硬件交互”、“服务创新”展开，致力于实现工业设计的文化赋能、科技赋能、产业赋能、商业赋能以及社会赋能。";
   let img: HTMLImageElement | undefined;
   const throttleUpdate: UpdateGuard = (fn) => throttle(fn, 500);
   const bounds = createElementBounds(() => img, {
@@ -204,12 +208,117 @@ const defaultCover = "tmp/1.png";
         class="cover "
         style={{ "--w": `${bounds.width}px`, "--h": `${bounds.height}px` }}
       >
-        <img src={cover ?? defaultCover} ref={(e) => (img = e)} /> </div>
-      <div class="title t5 mt-[2rem]">{title ?? defaultTitle}</div>
-      <div class="titleEn t2 font-light">{titleEn ?? defaultTitleEn}</div>
-      <div class="info t1 font-thin mt-[1rem]">{info ?? defaultInfo}</div>
-      <div class="arrow mt-[3rem]">
-        <img src="arrow.svg" class="w-4" />
+        <img src={cover ?? defaultCover} ref={(e) => (img = e)} />{" "}
+      </div>
+      <div class="title t5 mt-[2rem] mr-[3rem] sm:mr-0">
+        {title ?? defaultTitle}
+      </div>
+      <div class="titleEn t2 font-thin mt-[2rem]">
+        {titleEn ?? defaultTitleEn}
+      </div>
+      <div class="info mt- t1 font-thin mt-[2rem]">{info ?? defaultInfo}</div>
+      <div class="arrow mt-[4rem] sm:ml-[1rem]">
+        <img src="/arrow.svg" class="w-4" />
+      </div>
+    </div>
+  );
+}
+export function PeopleCard() {
+  return (
+    <div class="PeopleCard">
+      <div class="cover">
+        <img src="/peotmp/1.png" />
+      </div>
+      <div class="info flex flex-col justify-between gradient-line">
+        <div>
+          <div class="name mt-3 t5">李晓明</div>
+          <div class="title t1 font-thin">
+            工业设系主任、教授
+            <br />
+            博士生导师
+          </div>
+        </div>
+        <div class="desc t1 hidden sm:block font-thin">
+          浙江省工业设计竞赛专家委员会2020至今 浙江省工业设计领域专家库成员
+          澳洲莫纳什大学访学： 赴建筑与设计学院（MADA)开展服务设计 专题研究
+        </div>
+      </div>
+    </div>
+  );
+}
+export interface ResultItemProps {
+  cover?: string;
+  title?: string;
+  time?: string;
+  info?: string;
+  className?: string;
+}
+export function Resultcard({ cover, title, time, info }: ResultItemProps) {
+  const defaultCover = "/tmp/1.png";
+  const defaultTitle =
+    "工业设计系学子在2022年浙江省大学生工业设计大赛中喜获佳绩";
+  const defaultTime = "2023年7月20日";
+  const defaultInfo =
+    "教学围绕“智能产品”、“硬件交互”、“服务创新”展开，致力于实现工业设计的文化赋能、科技赋能、产业赋能、商业赋能以及社会赋能。";
+  let img: HTMLImageElement | undefined;
+  const throttleUpdate: UpdateGuard = (fn) => throttle(fn, 500);
+  const bounds = createElementBounds(() => img, {
+    trackMutation: throttleUpdate,
+    trackScroll: throttleUpdate,
+  });
+  createEffect(() => {
+    console.log(bounds.width, bounds.height);
+  });
+  return (
+    <div class={`ResultCard`}>
+      <div
+        class="cover "
+        style={{ "--w": `${bounds.width}px`, "--h": `${bounds.height}px` }}
+      >
+        <img src={cover ?? defaultCover} ref={(e) => (img = e)} />{" "}
+      </div>
+      <div class="time t2 font-thin mt-[2rem]">{time ?? defaultTime}</div>
+      <div class="title t5 sm:mt-[1rem] mr-[3rem] sm:mr-0">
+        {title ?? defaultTitle}
+      </div>
+      <div class="info mt- t1 font-thin mt-[2rem]">{info ?? defaultInfo}</div>
+      <div class="arrow mt-[4rem] sm:ml-[1rem]">
+        <img src="/arrow.svg" class="w-4" />
+      </div>
+    </div>
+  );
+}
+export function ResultcardSM({ cover, title, time, info }: ResultItemProps) {
+  const defaultCover = "/tmp/1.png";
+  const defaultTitle =
+    "工业设计系学子在2022年浙江省大学生工业设计大赛中喜获佳绩";
+  const defaultTime = "2023年7月20日";
+  const defaultInfo =
+    "教学围绕“智能产品”、“硬件交互”、“服务创新”展开，致力于实现工业设计的文化赋能、科技赋能、产业赋能、商业赋能以及社会赋能。";
+  let img: HTMLImageElement | undefined;
+  const throttleUpdate: UpdateGuard = (fn) => throttle(fn, 500);
+  const bounds = createElementBounds(() => img, {
+    trackMutation: throttleUpdate,
+    trackScroll: throttleUpdate,
+  });
+  createEffect(() => {
+    console.log(bounds.width, bounds.height);
+  });
+  return (
+    <div class={`ResultCardSM`}>
+      <div
+        class="cover "
+        style={{ "--w": `${bounds.width}px`, "--h": `${bounds.height}px` }}
+      >
+        <img src={cover ?? defaultCover} ref={(e) => (img = e)} />{" "}
+      </div>
+      <div class="text ml-10">
+        <div
+          class="title t3 "
+        >
+          {title ?? defaultTitle}
+        </div>
+        <div class="time t2 font-thin mt-[2rem]">{time ?? defaultTime}</div>
       </div>
     </div>
   );

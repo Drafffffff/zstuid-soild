@@ -26,8 +26,8 @@ export default function Home() {
     <main class="mx-auto text-white " onMouseMove={handleMouseMove}>
       <div class="graContainer  gradient-main">
         <div class="floatTitle sm:hidden">
-          <img src="title/m-bold.svg" />
-          <img src="title/m-stroke.svg" />
+          <img src="/title/m-bold.svg" />
+          <img src="/title/m-stroke.svg" />
         </div>
         <div
           class="floatTitleL sm:block hidden "
@@ -36,13 +36,13 @@ export default function Home() {
             "--y": `${map(pos().y, 0, window.innerHeight, -1, 1)}%`,
           }}
         >
-          <img src="title/bold.svg" />
-          <img src="title/stroke.svg" />
+          <img src="/title/bold.svg" />
+          <img src="/title/stroke.svg" />
         </div>
         <div class="scrollContent">
           <div class="img1">
             <img
-              src="tmp/1.png"
+              src="/tmp/1.png"
               class="floatImg"
               style={{
                 "--x": `${map(pos().x, 0, window.innerWidth, -7, 7)}%`,
@@ -55,7 +55,7 @@ export default function Home() {
             于1996年开始本科招生，2000年获硕士点，现为国家一流本科专业建设点、省“十三五”、“十二五”特色专业、教育部卓越工程师计划试点专业、省大学生工业设计竞赛秘书处单位，所在学科入选浙江省一流学科（A类）。2018专业排名全国25名/245（武书连2018大学本科专业排行榜），2019专业排名全国10名/223（2019中国大学本科教育分专业竞争力排行榜），专业评估为五星专业。
           </div>
           <div class="img2">
-            <img src="tmp/1.png" class="floatImg" />
+            <img src="/tmp/1.png" class="floatImg" />
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </div>
           <div class="right">
-            <img src="tmp/3.png" />
+            <img src="/tmp/3.png" />
           </div>
         </div>
       </div>

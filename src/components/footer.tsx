@@ -5,7 +5,7 @@ export default function Footer() {
     <div class="footer con w-full">
       <div class="mb sm:hidden">
         <div class="logo text-center ">
-          <img src={"footerlogo.svg"} />
+          <img src={"/footerlogo.svg"} />
         </div>
         <div class="contact text-center">
           <div class="addr text-white mb-3">
@@ -34,7 +34,7 @@ export default function Footer() {
       </div>
       <div class="desktop hidden sm:flex">
         <div class="logo child">
-          <img src="footerlogoB.svg" />
+          <img src="/footerlogoB.svg" />
           <div class="text1 t3">浙江理工大学工业设计系</div>
           <div class="text2 t1 font-thin mt-2">
             杭州市钱塘区下沙高教园区2号大街928号
