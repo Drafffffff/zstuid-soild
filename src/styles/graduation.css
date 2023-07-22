@@ -23,10 +23,10 @@
   justify-content: flex-end;
 }
 .onlineExb .entry .two {
-  @apply hidden;
+  display: hidden;
 }
 .onlineExb .entry .three {
-  @apply hidden;
+  display: hidden;
 }
 .onlineExb .entry .one .entryLink {
   background-color: rgba(2, 128, 219, 0.8);
