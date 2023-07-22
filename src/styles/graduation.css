@@ -109,11 +109,13 @@
     justify-content: flex-end;
   }
   .onlineExb .entry .two {
+    display: block;
     flex: 1;
     background-image: url(/tmp/22.png);
     background-size: cover;
   }
   .onlineExb .entry .three {
+    display: block;
     flex: 1;
     background-image: url(/tmp/33.png);
     background-size: cover;
