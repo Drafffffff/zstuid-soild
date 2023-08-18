@@ -15,6 +15,13 @@ import {
 // gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const [pos, setPos] = createSignal({ x: 0, y: 0 });
+  const [windowWidth, setWindowWidth] = createSignal(0);
+  onMount(() => {
+    setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", () => {
+      setWindowWidth(window.innerWidth);
+    });
+  });
 
   function handleMouseMove(event: MouseEvent) {
     setPos({
@@ -22,6 +29,7 @@ export default function Home() {
       y: event.clientY,
     });
   }
+
   return (
     <main class="mx-auto text-white " onMouseMove={handleMouseMove}>
       <div class="graContainer  gradient-main">
@@ -32,8 +40,8 @@ export default function Home() {
         <div
           class="floatTitleL sm:block hidden "
           style={{
-            "--x": `${map(pos().x, 0, window.innerWidth, -1, 1)}%`,
-            "--y": `${map(pos().y, 0, window.innerHeight, -1, 1)}%`,
+            "--x": `${map(pos().x, 0, windowWidth(), -1, 1)}%`,
+            "--y": `${map(pos().y, 0, windowWidth(), -1, 1)}%`,
           }}
         >
           <img src="/title/bold.svg" />
